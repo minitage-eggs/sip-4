@@ -29,7 +29,6 @@ def h(options, buildout, opts):
     os.chdir(md)
     opts = ' '.join(opts.split())
     py = buildout['buildout']['executable']
-    py = 'python'
     if not  py.startswith('/'):
         py = which(py)
     includes = os.path.join(sys.prefix, 'includes')
